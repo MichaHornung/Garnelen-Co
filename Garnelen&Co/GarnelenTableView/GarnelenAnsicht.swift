@@ -10,7 +10,7 @@ import UIKit
 class GarnelenAnsicht: UIViewController {
 
         
-        var garnele: Garnele!
+  
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var herkunft: UILabel!
@@ -24,7 +24,8 @@ class GarnelenAnsicht: UIViewController {
     @IBOutlet weak var garnelenPic: UIImageView!
         
         
-        
+    var garnele: Garnele!
+
         
         override func viewDidLoad() {
             super.viewDidLoad()

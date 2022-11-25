@@ -38,6 +38,7 @@
 		BA9297802927C056006D0C6C /* GarnelenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarnelenViewController.swift; sourceTree = "<group>"; };
 		BACAF395292B6A9D00D82F1B /* GarnelenAnsicht.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarnelenAnsicht.swift; sourceTree = "<group>"; };
 		BAE2CE2E29279CFF0002E86F /* RegestrierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegestrierViewController.swift; sourceTree = "<group>"; };
+		BAE3A5C02931083000BA04F0 /* meinAquarium.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = meinAquarium.HEIC; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 				BA1399D229237F0D000DBA75 /* SceneDelegate.swift */,
 				BA1399D629237F0D000DBA75 /* Main.storyboard */,
 				BA1399D929237F0F000DBA75 /* Assets.xcassets */,
+				BAE3A5C02931083000BA04F0 /* meinAquarium.HEIC */,
 				BA1399E42923800F000DBA75 /* hintergrund.jpeg */,
 				BA049F85292FA8F5003FE827 /* Michael.JPG */,
 				BA1399DB29237F0F000DBA75 /* LaunchScreen.storyboard */,
