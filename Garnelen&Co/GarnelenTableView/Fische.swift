@@ -6,6 +6,19 @@
 //
 
 import UIKit
+struct Garnele{
+    var name: String
+    var herkunft: String
+    var groesse: String
+    var temperatur: String
+    var becken: String
+    var phWert: String
+    var ghWert: String
+    var khWert: String
+    var alter: String
+    var garnelenPic: UIImage
+    
+}
 
 
 
