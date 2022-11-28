@@ -65,8 +65,8 @@ class FischeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        FischeTableView.dataSource = self
-        FischeTableView.delegate = self
+        fischeTableView.dataSource = self
+        fischeTableView.delegate = self
 //        HINZUFÜGEN BUTTON
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Fische +", style: .plain, target: self, action: #selector(addTapped))
         
@@ -112,24 +112,24 @@ class FischeViewController: UIViewController {
     override func fischeTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let fischeCell = fischeTableView.dequeueReusableCell(withIdentifier: "FischeCell", for: indexPath)
        
-        var garnelenName: String
+        var fischeName: String
         switch indexPath.section{
         case 0:
-            garnelenName = guppyFische[indexPath.row].name
+            fischeName = guppyFische[indexPath.row].name
         case 1:
-            garnelenName = salmlerFische[indexPath.row].name
+            fischeName = salmlerFische[indexPath.row].name
         case 2:
-            garnelenName = mollyFische[indexPath.row].name
+            fischeName = mollyFische[indexPath.row].name
         case 3:
-            garnelenName = platyFische[indexPath.row].name
+            fischeName = platyFische[indexPath.row].name
         default:
-            garnelenName = ""
+            fischeName = ""
         }
         
-        var content = garnelenCell.defaultContentConfiguration()
-        content.text = garnelenName
-        content.image = UIImage(named: "Garnelen/\(garnelenName)")
-        garnelenCell.contentConfiguration = content
+        var content = fischeCell.defaultContentConfiguration()
+        content.text = fischeName
+        content.image = UIImage(named: "Fische/\(fischeName)")
+        fischeCell.contentConfiguration = content
         
         return fischeCell
         
@@ -137,13 +137,13 @@ class FischeViewController: UIViewController {
     override func fischeTableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section{
         case 0:
-            return "neocardinia"
+            return "guppys"
         case 1:
-            return "taiwanBee"
+            return "salmler"
         case 2:
-            return "redBee"
+            return "platy"
         case 3:
-            return "blackBee"
+            return "molly"
         default:
             return nil
         }

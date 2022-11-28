@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA049F86292FA8F5003FE827 /* Michael.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BA049F85292FA8F5003FE827 /* Michael.JPG */; };
-		BA049F8A292FAF92003FE827 /* Fische.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049F89292FAF92003FE827 /* Fische.swift */; };
+		BA049F8A292FAF92003FE827 /* Garnelen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049F89292FAF92003FE827 /* Garnelen.swift */; };
 		BA1399D129237F0D000DBA75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1399D029237F0D000DBA75 /* AppDelegate.swift */; };
 		BA1399D329237F0D000DBA75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1399D229237F0D000DBA75 /* SceneDelegate.swift */; };
 		BA1399D529237F0D000DBA75 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1399D429237F0D000DBA75 /* LoginController.swift */; };
@@ -28,7 +28,7 @@
 
 /* Begin PBXFileReference section */
 		BA049F85292FA8F5003FE827 /* Michael.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Michael.JPG; sourceTree = "<group>"; };
-		BA049F89292FAF92003FE827 /* Fische.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fische.swift; sourceTree = "<group>"; };
+		BA049F89292FAF92003FE827 /* Garnelen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garnelen.swift; sourceTree = "<group>"; };
 		BA1399CD29237F0D000DBA75 /* Garnelen&Co.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garnelen&Co.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1399D029237F0D000DBA75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1399D229237F0D000DBA75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 			children = (
 				BA9297802927C056006D0C6C /* GarnelenViewController.swift */,
 				BACAF395292B6A9D00D82F1B /* GarnelenAnsicht.swift */,
-				BA049F89292FAF92003FE827 /* Fische.swift */,
+				BA049F89292FAF92003FE827 /* Garnelen.swift */,
 			);
 			path = GarnelenTableView;
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 				BA1399D129237F0D000DBA75 /* AppDelegate.swift in Sources */,
 				BACAF396292B6A9D00D82F1B /* GarnelenAnsicht.swift in Sources */,
 				BAA0F7972934C35E00FB2810 /* Fische.swift in Sources */,
-				BA049F8A292FAF92003FE827 /* Fische.swift in Sources */,
+				BA049F8A292FAF92003FE827 /* Garnelen.swift in Sources */,
 				BA9297812927C056006D0C6C /* GarnelenViewController.swift in Sources */,
 				BAA0F7932934C21B00FB2810 /* FischeViewController.swift in Sources */,
 				BAA0F7952934C33A00FB2810 /* FischAnsicht.swift in Sources */,

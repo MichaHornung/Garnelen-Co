@@ -7,23 +7,16 @@
 
 import UIKit
 
-class Fische: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+struct Fische{
+    var name: String
+    var herkunft: String
+    var groesse: String
+    var temperatur: String
+    var becken: String
+    var phWert: String
+    var ghWert: String
+    var khWert: String
+    var alter: String
+    var garnelenPic: UIImage
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
