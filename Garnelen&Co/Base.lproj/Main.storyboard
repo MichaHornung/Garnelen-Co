@@ -131,6 +131,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="RqE-7Z-SBE" kind="show" identifier="profilToFische" id="UuW-Tn-EWu"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Michael.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="Gce-k1-Qtf" userLabel="Profilbild.JPG">
                                 <rect key="frame" x="50" y="150" width="90" height="128"/>
@@ -198,6 +201,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="DXE-yk-UaY" kind="show" id="geZ-8Y-NBq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2DD-8b-ogg"/>
@@ -415,9 +421,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="aY5-SC-KKm"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="EDV-Td-gPC"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -428,11 +432,11 @@
             </objects>
             <point key="canvasLocation" x="2275.5725190839694" y="743.66197183098598"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View-->
         <scene sceneID="b1B-sm-bX9">
             <objects>
-                <tableViewController id="RqE-7Z-SBE" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Iaf-Ht-92Z" userLabel="Fische Table View">
+                <tableViewController modalPresentationStyle="fullScreen" id="RqE-7Z-SBE" userLabel="Table View" customClass="FischeTableViewController" customModule="Garnelen_Co" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Iaf-Ht-92Z" userLabel="Fische View">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -447,12 +451,13 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="RqE-7Z-SBE" id="zws-vL-hHT"/>
-                            <outlet property="delegate" destination="RqE-7Z-SBE" id="oc6-v9-xRa"/>
+                            <outlet property="dataSource" destination="RqE-7Z-SBE" id="t55-Kd-xWY"/>
+                            <outlet property="delegate" destination="RqE-7Z-SBE" id="k4s-7s-9fd"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="aRw-Np-MBB"/>
                     <connections>
-                        <segue destination="FOk-ls-BnF" kind="show" identifier="goToFische" id="1Ka-uD-b9C"/>
+                        <segue destination="FOk-ls-BnF" kind="show" identifier="showFische" id="1Ka-uD-b9C"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLb-fB-wHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -462,7 +467,7 @@
         <!--Table View Controller-->
         <scene sceneID="JM5-rL-wEe">
             <objects>
-                <tableViewController id="DXE-yk-UaY" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="DXE-yk-UaY" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="HVs-Z6-Tv1" userLabel="Aquarium Table View">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -482,6 +487,10 @@
                             <outlet property="delegate" destination="DXE-yk-UaY" id="RJv-cv-a8e"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="BEK-X6-b1o"/>
+                    <connections>
+                        <segue destination="D52-4m-yQE" kind="show" id="3ho-GF-ZEF"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tq-DN-I7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -695,10 +704,10 @@
             </objects>
             <point key="canvasLocation" x="2276" y="1427"/>
         </scene>
-        <!--GarnelenAnsicht-->
+        <!--FischAnsicht-->
         <scene sceneID="Lio-PI-qHz">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="FOk-ls-BnF" userLabel="GarnelenAnsicht" customClass="FischeViewController" customModule="Garnelen_Co" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="FOk-ls-BnF" userLabel="FischAnsicht" customClass="FischAnsicht" customModule="Garnelen_Co" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vct-mL-AzY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -707,7 +716,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7TH-w6-5x9">
-                                <rect key="frame" x="177" y="239" width="200" height="263"/>
+                                <rect key="frame" x="177" y="239" width="200" height="202.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEv-tG-hqo">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="20.333333333333332"/>
@@ -761,24 +770,10 @@
                                         <color key="textColor" red="0.45490196350000001" green="0.97647058959999999" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KH-Wert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLY-KR-vnD">
-                                        <rect key="frame" x="0.0" y="212.33333333333331" width="200" height="20.333333333333343"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.45490196350000001" green="0.97647058959999999" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLM-4Y-H0S">
-                                        <rect key="frame" x="0.0" y="242.66666666666669" width="200" height="20.333333333333314"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.45490196350000001" green="0.97647058959999999" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a3E-gv-ZlP">
-                                <rect key="frame" x="15.999999999999993" y="239" width="101.33333333333331" height="263"/>
+                                <rect key="frame" x="15.999999999999993" y="239" width="101.33333333333331" height="202.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-eL-mD4" userLabel="Nametext">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="20.333333333333332"/>
@@ -829,24 +824,10 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KH-Wert" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXk-e4-hOB" userLabel="KH-Werttext">
-                                        <rect key="frame" x="0.0" y="212.33333333333331" width="66.333333333333329" height="20.333333333333343"/>
-                                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Alter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnn-ug-va5" userLabel="Altertext">
-                                        <rect key="frame" x="0.0" y="242.66666666666669" width="36" height="20.333333333333314"/>
-                                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FIx-bC-7xb">
-                                <rect key="frame" x="16" y="77" width="100" height="144"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FIx-bC-7xb">
+                                <rect key="frame" x="15.999999999999993" y="77" width="101.33333333333331" height="144"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PSs-8r-lX0"/>
@@ -868,26 +849,24 @@
                     </view>
                     <navigationItem key="navigationItem" title="Steckbrief" style="editor" id="fTA-4Y-FFm" colorLabel="IBBuiltInLabel-Red"/>
                     <connections>
-                        <outlet property="alter" destination="mLM-4Y-H0S" id="5Dj-CA-Tc3"/>
-                        <outlet property="becken" destination="vsg-1m-m4n" id="57C-sz-VUT"/>
-                        <outlet property="garnelenPic" destination="FIx-bC-7xb" id="HrO-MS-dPO"/>
-                        <outlet property="ghWert" destination="CTQ-vo-QNB" id="6T7-JL-4KL"/>
-                        <outlet property="groesse" destination="9Wr-qv-xgI" id="jTr-FO-L4f"/>
-                        <outlet property="herkunft" destination="JVG-DD-BIf" id="hP0-8H-d5a"/>
-                        <outlet property="khWert" destination="OLY-KR-vnD" id="alO-pE-Zvm"/>
-                        <outlet property="name" destination="cEv-tG-hqo" id="TTq-hT-jbs"/>
-                        <outlet property="phWert" destination="948-87-AFt" id="0eW-qE-efB"/>
-                        <outlet property="temperatur" destination="EuR-2a-ozY" id="s5S-Ad-Qgz"/>
+                        <outlet property="becken" destination="vsg-1m-m4n" id="JE7-5v-N5M"/>
+                        <outlet property="fischePic" destination="FIx-bC-7xb" id="dPX-ZF-cnm"/>
+                        <outlet property="ghWert" destination="CTQ-vo-QNB" id="21q-Z8-vr3"/>
+                        <outlet property="groesse" destination="9Wr-qv-xgI" id="Y4k-FH-wCs"/>
+                        <outlet property="herkunft" destination="JVG-DD-BIf" id="8ZV-Lz-Hpe"/>
+                        <outlet property="name" destination="cEv-tG-hqo" id="LBi-1h-UB3"/>
+                        <outlet property="phWert" destination="948-87-AFt" id="enb-RA-2nL"/>
+                        <outlet property="temperatur" destination="EuR-2a-ozY" id="Ccx-2p-Xd6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOl-Ds-NHM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3036" y="1427"/>
         </scene>
-        <!--GarnelenAnsicht-->
+        <!--AquariumAnsicht-->
         <scene sceneID="3r1-Qe-96H">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="D52-4m-yQE" userLabel="GarnelenAnsicht" customClass="GarnelenAnsicht" customModule="Garnelen_Co" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="D52-4m-yQE" userLabel="AquariumAnsicht" customClass="GarnelenAnsicht" customModule="Garnelen_Co" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rgK-Cl-AEg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

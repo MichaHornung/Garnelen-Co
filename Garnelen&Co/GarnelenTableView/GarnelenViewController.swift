@@ -20,19 +20,19 @@ class GarnelenTableViewController: UITableViewController {
         "White Pearl Garnele",
         "Yellow Fire Garnele"]
     var neocardiniaGarnele = [
-        Fische(name:"Sakura Orange Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Sakura Orange Garnele")!),
+        Garnele(name:"Sakura Orange Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Sakura Orange Garnele")!),
         
-        Fische(name:"Black Sakura Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Black Sakura Garnele")!),
+        Garnele(name:"Black Sakura Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Black Sakura Garnele")!),
 
-        Fische(name:"Yellow Fire Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Yellow Fire Garnele")!),
+        Garnele(name:"Yellow Fire Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Yellow Fire Garnele")!),
 
-        Fische(name:"White Pearl Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/White Pearl Garnele")!),
+        Garnele(name:"White Pearl Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/White Pearl Garnele")!),
 
-        Fische(name:"Blue Velvet Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Blue Velvet Garnele")!),
+        Garnele(name:"Blue Velvet Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Blue Velvet Garnele")!),
 
-        Fische(name:"Green Jade Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Green Jade Garnele")!),
+        Garnele(name:"Green Jade Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Green Jade Garnele")!),
 
-        Fische(name:"Red Fire Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Red Fire Garnele")!),
+        Garnele(name:"Red Fire Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Red Fire Garnele")!),
     ]
 
     let taiwanBee = [
@@ -42,27 +42,27 @@ class GarnelenTableViewController: UITableViewController {
         "Blue King Kong",
         "Red Pinto"]
     var taiwanBeeGarnele = [
-        Fische(name:"Black P Spotted Head", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Black P Spotted Head")!),
-        Fische(name:"Blue King Kong", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Blue King Kong")!),
-        Fische(name:"Black Mosura", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Black Mosura")!),
-        Fische(name:"Blue Bolt", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Blue Bolt")!),
-        Fische(name:"Red Pinto", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Red Pinto")!)]
+        Garnele(name:"Black P Spotted Head", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Black P Spotted Head")!),
+        Garnele(name:"Blue King Kong", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Blue King Kong")!),
+        Garnele(name:"Black Mosura", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Black Mosura")!),
+        Garnele(name:"Blue Bolt", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Blue Bolt")!),
+        Garnele(name:"Red Pinto", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Red Pinto")!)]
 
     let redBee = [
         "CrystalRedGarnele",
         "GhostBee"]
     var redBeeGarnele = [
-        Fische(name:"CrystalRedGarnele", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/CrystalRedGarnele")!),
-        Fische(name:"GhostBee", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/GhostBee")!)]
+        Garnele(name:"CrystalRedGarnele", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/CrystalRedGarnele")!),
+        Garnele(name:"GhostBee", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/GhostBee")!)]
 
     let blackBee = [
         "EBITENGU Black Bee",
         "Schwarze Bienengarnele"]
     var blackBeeGarnele = [
-        Fische(name:"Schwarze Bienengarnele", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Schwarze Bienengarnele")!),
-        Fische(name:"EBITENGU Black Bee", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/EBITENGU Black Bee")!)]
+        Garnele(name:"Schwarze Bienengarnele", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Schwarze Bienengarnele")!),
+        Garnele(name:"EBITENGU Black Bee", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/EBITENGU Black Bee")!)]
     
-    var selectedGarnele: Fische!
+    var selectedGarnele: Garnele!
     
     
     override func viewDidLoad() {

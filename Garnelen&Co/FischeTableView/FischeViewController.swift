@@ -7,66 +7,82 @@
 
 import UIKit
 
-class FischeViewController: UIViewController {
+class FischeTableViewController: UITableViewController {
 
     let guppys = [
-        "Black Sakura Garnele",
-        "Blue Velvet Garnele",
-        "Green Jade Garnele",
-        "Red Fire Garnele",
-        "Sakura Orange Garnele",
-        "White Pearl Garnele",
-        "Yellow Fire Garnele"]
+        "KoiSunset",
+        "MoskauBlau",
+        "SnowWhite",
+        "YellowCalico",
+       ]
     var guppyFische = [
-        Fische(name:"Sakura Orange Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Sakura Orange Garnele")!),
-        
-        Fische(name:"Black Sakura Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Black Sakura Garnele")!),
-
-        Fische(name:"Yellow Fire Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Yellow Fire Garnele")!),
-
-        Fische(name:"White Pearl Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/White Pearl Garnele")!),
-
-        Fische(name:"Blue Velvet Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Blue Velvet Garnele")!),
-
-        Fische(name:"Green Jade Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Green Jade Garnele")!),
-
-        Fische(name:"Red Fire Garnele", herkunft: "Ostchina", groesse: "2 cm", temperatur: "18 - 26 °C", becken: "ab 10 l", phWert: "6,0 - 7,8", ghWert: " bis 20°", khWert: "bis 12°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Red Fire Garnele")!),
+        Fische(name:"KoiSunset", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/KoiSunset")!),
+        Fische(name:"MoskauBlau", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/MoskauBlau")!),
+        Fische(name:"SnowWhite", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/SnowWhite")!),
+        Fische(name:"YellowCalico", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/YellowCalico")!)
     ]
 
     let salmler = [
-        "Black Mosura",
-        "Black P Spotted Head",
-        "Blue Bolt",
-        "Blue King Kong",
-        "Red Pinto"]
+        "BlauerNeon",
+        "RoterNeon",
+        "Rotkopfsalmler",
+        "SchwarzerNeon",
+    ]
     var salmlerFische = [
-        Fische(name:"Black P Spotted Head", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Black P Spotted Head")!),
-        Fische(name:"Blue King Kong", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Blue King Kong")!),
-        Fische(name:"Black Mosura", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Black Mosura")!),
-        Fische(name:"Blue Bolt", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Blue Bolt")!),
-        Fische(name:"Red Pinto", herkunft: "China, Hong-Kong", groesse: "2 cm", temperatur: "18 - 24 °C", becken: "ab 20 l", phWert: "6,0 - 7,5", ghWert: "4 - 20°", khWert: "0 - 3°", alter: "ca. 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Red Pinto")!)]
-
+        Fische(name:"BlauerNeon", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlauerNeon")!),
+        Fische(name:"RoterNeon", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/RoterNeon")!),
+        Fische(name:"Rotkopfsalmler", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Rotkopfsalmler")!),
+        Fische(name:"SchwarzerNeon", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/SchwarzerNeon")!)
+    ]
+    
     let platy = [
-        "CrystalRedGarnele",
-        "GhostBee"]
+        "BlueButterfly",
+        "BlueCalico",
+        "BlueWaigtail",
+        "Sunset"
+    ]
     var platyFische = [
-        Fische(name:"CrystalRedGarnele", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/CrystalRedGarnele")!),
-        Fische(name:"GhostBee", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/GhostBee")!)]
+        Fische(name:"BlueButterfly", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlueButterfly")!),
+        Fische(name:"BlueCalico", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlueCalico")!),
+        Fische(name:"BlueWaigtail", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlueWaigtail")!),
+        Fische(name:"Sunset", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Sunset")!)
+    ]
 
     let molly = [
-        "EBITENGU Black Bee",
-        "Schwarze Bienengarnele"]
+        "Black",
+        "Dalmatiner",
+        "Goldpuder"
+    ]
     var mollyFische = [
-        Fische(name:"Schwarze Bienengarnele", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/Schwarze Bienengarnele")!),
-        Fische(name:"EBITENGU Black Bee", herkunft: "China, Hong-Kong", groesse: "Weibchen bis zu 3,0 cm; Männchen bis zu 2,5 cm", temperatur: "20 - 24 °C", becken: "ab 10 l", phWert: "6,5 - 7,5", ghWert: " bis 10°", khWert: "bis 8°", alter: "ca. 1,5 - 2 Jahre", garnelenPic: UIImage(named:"Garnelen/EBITENGU Black Bee")!)]
+        Fische(name:"Black", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Black")!),
+        Fische(name:"Dalmatiner", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Dalmatiner")!),
+        Fische(name:"Goldpuder", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Goldpuder")!)
+    ]
     
+    let barsche = [
+        "ApistogrammaCacatuoides",
+        "LabidochromisYellow",
+        "RamiElektricBlue"
+    ]
+    var barscheFische = [
+        Fische(name:"ApistogrammaCacatuoides", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/ApistogrammaCacatuoides")!),
+        Fische(name:"LabidochromisYellow", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/LabidochromisYellow")!),
+        Fische(name:"RamiElektricBlue", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/RamiElektricBlue")!)
+    ]
+    let discus = [
+        "Kobald",
+        "Marlboro"]
+    var discusFische = [
+        Fische(name:"Kobald", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Kobald")!),
+        Fische(name:"Marlboro", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Marlboro")!)
+    ]
     var selectedFische: Fische!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fischeTableView.dataSource = self
-        fischeTableView.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
 //        HINZUFÜGEN BUTTON
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Fische +", style: .plain, target: self, action: #selector(addTapped))
         
@@ -78,10 +94,10 @@ class FischeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationViewController = segue.destination as? FischAnsicht
-//        let garnelen = sender as? Garnele
+
         destinationViewController?.fische = selectedFische!
     }
-    override func fischeTableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ fischeView: UITableView, didSelectRowAt indexPath: IndexPath) {
          selectedFische = guppyFische[indexPath.row]
         
         switch indexPath.section{
@@ -89,28 +105,32 @@ class FischeViewController: UIViewController {
         case 1:  selectedFische = salmlerFische[indexPath.row]
         case 2:  selectedFische = mollyFische[indexPath.row]
         case 3:  selectedFische = platyFische[indexPath.row]
+        case 4:  selectedFische = barscheFische[indexPath.row]
+        case 5:  selectedFische = discusFische[indexPath.row]
         default: break
       
         }
-        performSegue(withIdentifier: "goToFische", sender: self)
+        performSegue(withIdentifier: "showFische", sender: self)
     }
     
-    override func numberOfSections(in fischeTableView: UITableView) -> Int {
-        return 4
+    override func numberOfSections(in fischeView: UITableView) -> Int {
+        return 6
     }
-    override func fischeTableView(_ fischeTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ fischeView: UITableView, numberOfRowsInSection section: Int) -> Int {
      
         switch section{
         case 0: return guppyFische.count
         case 1: return salmlerFische.count
         case 2: return mollyFische.count
         case 3: return platyFische.count
+        case 4: return barscheFische.count
+        case 5: return discusFische.count
         default:
             return 0
         }
     }
-    override func fischeTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let fischeCell = fischeTableView.dequeueReusableCell(withIdentifier: "FischeCell", for: indexPath)
+    override func tableView(_ fischeView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let fischeCell = fischeView.dequeueReusableCell(withIdentifier: "FischeCell", for: indexPath)
        
         var fischeName: String
         switch indexPath.section{
@@ -122,6 +142,10 @@ class FischeViewController: UIViewController {
             fischeName = mollyFische[indexPath.row].name
         case 3:
             fischeName = platyFische[indexPath.row].name
+        case 4:
+            fischeName = barscheFische[indexPath.row].name
+        case 5:
+            fischeName = discusFische[indexPath.row].name
         default:
             fischeName = ""
         }
@@ -134,7 +158,7 @@ class FischeViewController: UIViewController {
         return fischeCell
         
     }
-    override func fischeTableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ fischeView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section{
         case 0:
             return "guppys"
@@ -144,6 +168,10 @@ class FischeViewController: UIViewController {
             return "platy"
         case 3:
             return "molly"
+        case 4:
+            return "barsche"
+        case 5:
+            return "discus"
         default:
             return nil
         }

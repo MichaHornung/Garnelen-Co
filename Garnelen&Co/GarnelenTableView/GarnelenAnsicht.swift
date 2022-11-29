@@ -24,7 +24,7 @@ class GarnelenAnsicht: UIViewController {
     @IBOutlet weak var garnelenPic: UIImageView!
         
         
-    var garnele: Fische!
+    var garnele: Garnele!
 
         
         override func viewDidLoad() {

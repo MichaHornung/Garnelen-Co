@@ -15,8 +15,6 @@ struct Fische{
     var becken: String
     var phWert: String
     var ghWert: String
-    var khWert: String
-    var alter: String
-    var garnelenPic: UIImage
+    var fischePic: UIImage
     
 }

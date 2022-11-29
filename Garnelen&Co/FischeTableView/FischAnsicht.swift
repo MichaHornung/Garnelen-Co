@@ -9,21 +9,36 @@ import UIKit
 
 class FischAnsicht: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
+    
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var herkunft: UILabel!
+    @IBOutlet weak var groesse: UILabel!
+    @IBOutlet weak var temperatur: UILabel!
+    @IBOutlet weak var becken: UILabel!
+    @IBOutlet weak var phWert: UILabel!
+    @IBOutlet weak var ghWert: UILabel!
+    @IBOutlet weak var fischePic: UIImageView!
+        
+        
+    var fische: Fische!
 
-    /*
-    // MARK: - Navigation
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            fischePic.image = fische.fischePic
+            name.text = fische.name
+            herkunft.text = fische.herkunft
+            groesse.text = fische.groesse
+            temperatur.text = fische.temperatur
+            becken.text = fische.becken
+            phWert.text = fische.phWert
+            ghWert.text = fische.ghWert
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+      
+        }
+
     }
-    */
-
-}
