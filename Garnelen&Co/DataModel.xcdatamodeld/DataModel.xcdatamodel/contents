@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Fische" representedClassName="Fische" syncable="YES">
+        <attribute name="becken" optional="YES" attributeType="String"/>
+        <attribute name="fischePics" optional="YES" attributeType="Binary"/>
+        <attribute name="ghWert" optional="YES" attributeType="String"/>
+        <attribute name="groesse" optional="YES" attributeType="String"/>
+        <attribute name="herkunft" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phWert" optional="YES" attributeType="String"/>
+        <attribute name="temperatur" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Garnelen" representedClassName="Garnelen" syncable="YES">
+        <attribute name="alter" optional="YES"/>
+        <attribute name="becken" optional="YES" attributeType="String"/>
+        <attribute name="garnelenPic" optional="YES" attributeType="Binary"/>
+        <attribute name="ghWert" optional="YES" attributeType="String"/>
+        <attribute name="groesse" optional="YES" attributeType="String"/>
+        <attribute name="herkunft" optional="YES" attributeType="String"/>
+        <attribute name="khWert" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phWert" optional="YES" attributeType="String"/>
+        <attribute name="temperatur" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Login" representedClassName="Login" syncable="YES">
+        <attribute name="anmelden" optional="YES" attributeType="String"/>
+        <attribute name="benutzername" optional="YES" attributeType="String"/>
+        <attribute name="passwort" optional="YES" attributeType="String"/>
+        <attribute name="registrieren" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="NZFische" representedClassName="NZFische" syncable="YES">
+        <attribute name="entdeckDatum" optional="YES" attributeType="String"/>
+        <attribute name="geschluepftDatum" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="NZGarnelen" representedClassName="NZGarnelen" syncable="YES">
+        <attribute name="endeckDatum" optional="YES" attributeType="String"/>
+        <attribute name="geschliepftDatum" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Profil" representedClassName="Profil" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="mitglied_seit" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="pictures" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="Registrieren" representedClassName="Registrieren" syncable="YES">
+        <attribute name="benutzername" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="emailadresse" optional="YES" attributeType="String"/>
+        <attribute name="passwort" optional="YES" attributeType="String"/>
+        <attribute name="regestrieren" optional="YES" attributeType="String"/>
+        <attribute name="whdpasswort" optional="YES" attributeType="String"/>
+    </entity>
+</model>

@@ -8,7 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		BA049F86292FA8F5003FE827 /* Michael.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BA049F85292FA8F5003FE827 /* Michael.JPG */; };
-		BA049F8A292FAF92003FE827 /* Garnelen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049F89292FAF92003FE827 /* Garnelen.swift */; };
+		BA0FCABA294866400062991B /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAB8294866400062991B /* DataModel.xcdatamodeld */; };
+		BA0FCAEA2948AD8D0062991B /* NZGarnelen+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCADC2948AD8D0062991B /* NZGarnelen+CoreDataClass.swift */; };
+		BA0FCAEB2948AD8D0062991B /* NZGarnelen+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCADD2948AD8D0062991B /* NZGarnelen+CoreDataProperties.swift */; };
+		BA0FCAEC2948AD8D0062991B /* Registrieren+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCADE2948AD8D0062991B /* Registrieren+CoreDataClass.swift */; };
+		BA0FCAED2948AD8D0062991B /* Registrieren+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCADF2948AD8D0062991B /* Registrieren+CoreDataProperties.swift */; };
+		BA0FCAEE2948AD8D0062991B /* Fische+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAE02948AD8D0062991B /* Fische+CoreDataClass.swift */; };
+		BA0FCAEF2948AD8D0062991B /* Fische+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAE12948AD8D0062991B /* Fische+CoreDataProperties.swift */; };
+		BA0FCAF02948AD8D0062991B /* NZFische+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAE22948AD8D0062991B /* NZFische+CoreDataClass.swift */; };
+		BA0FCAF12948AD8D0062991B /* NZFische+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAE32948AD8D0062991B /* NZFische+CoreDataProperties.swift */; };
+		BA0FCAF22948AD8D0062991B /* Profil+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAE42948AD8D0062991B /* Profil+CoreDataClass.swift */; };
+		BA0FCAF32948AD8D0062991B /* Profil+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAE52948AD8D0062991B /* Profil+CoreDataProperties.swift */; };
+		BA0FCAF42948AD8D0062991B /* Garnelen+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAE62948AD8D0062991B /* Garnelen+CoreDataClass.swift */; };
+		BA0FCAF52948AD8D0062991B /* Garnelen+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAE72948AD8D0062991B /* Garnelen+CoreDataProperties.swift */; };
+		BA0FCAF62948AD8D0062991B /* Login+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAE82948AD8D0062991B /* Login+CoreDataClass.swift */; };
+		BA0FCAF72948AD8D0062991B /* Login+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAE92948AD8D0062991B /* Login+CoreDataProperties.swift */; };
 		BA1399D129237F0D000DBA75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1399D029237F0D000DBA75 /* AppDelegate.swift */; };
 		BA1399D329237F0D000DBA75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1399D229237F0D000DBA75 /* SceneDelegate.swift */; };
 		BA1399D529237F0D000DBA75 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1399D429237F0D000DBA75 /* LoginController.swift */; };
@@ -20,7 +34,6 @@
 		BA9297812927C056006D0C6C /* GarnelenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9297802927C056006D0C6C /* GarnelenViewController.swift */; };
 		BAA0F7932934C21B00FB2810 /* FischeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F7922934C21B00FB2810 /* FischeViewController.swift */; };
 		BAA0F7952934C33A00FB2810 /* FischAnsicht.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F7942934C33A00FB2810 /* FischAnsicht.swift */; };
-		BAA0F7972934C35E00FB2810 /* Fische.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F7962934C35E00FB2810 /* Fische.swift */; };
 		BAACF5502931355300BEE135 /* hintergrundMeinAquarium.png in Resources */ = {isa = PBXBuildFile; fileRef = BAACF54F2931355300BEE135 /* hintergrundMeinAquarium.png */; };
 		BACAF396292B6A9D00D82F1B /* GarnelenAnsicht.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACAF395292B6A9D00D82F1B /* GarnelenAnsicht.swift */; };
 		BAE2CE2F29279CFF0002E86F /* RegestrierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2CE2E29279CFF0002E86F /* RegestrierViewController.swift */; };
@@ -28,7 +41,21 @@
 
 /* Begin PBXFileReference section */
 		BA049F85292FA8F5003FE827 /* Michael.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Michael.JPG; sourceTree = "<group>"; };
-		BA049F89292FAF92003FE827 /* Garnelen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garnelen.swift; sourceTree = "<group>"; };
+		BA0FCAB9294866400062991B /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		BA0FCADC2948AD8D0062991B /* NZGarnelen+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NZGarnelen+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA0FCADD2948AD8D0062991B /* NZGarnelen+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NZGarnelen+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA0FCADE2948AD8D0062991B /* Registrieren+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Registrieren+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA0FCADF2948AD8D0062991B /* Registrieren+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Registrieren+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA0FCAE02948AD8D0062991B /* Fische+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fische+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA0FCAE12948AD8D0062991B /* Fische+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fische+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA0FCAE22948AD8D0062991B /* NZFische+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NZFische+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA0FCAE32948AD8D0062991B /* NZFische+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NZFische+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA0FCAE42948AD8D0062991B /* Profil+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profil+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA0FCAE52948AD8D0062991B /* Profil+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profil+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA0FCAE62948AD8D0062991B /* Garnelen+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Garnelen+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA0FCAE72948AD8D0062991B /* Garnelen+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Garnelen+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA0FCAE82948AD8D0062991B /* Login+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA0FCAE92948AD8D0062991B /* Login+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BA1399CD29237F0D000DBA75 /* Garnelen&Co.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garnelen&Co.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1399D029237F0D000DBA75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1399D229237F0D000DBA75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +69,6 @@
 		BA9297802927C056006D0C6C /* GarnelenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarnelenViewController.swift; sourceTree = "<group>"; };
 		BAA0F7922934C21B00FB2810 /* FischeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FischeViewController.swift; sourceTree = "<group>"; };
 		BAA0F7942934C33A00FB2810 /* FischAnsicht.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FischAnsicht.swift; sourceTree = "<group>"; };
-		BAA0F7962934C35E00FB2810 /* Fische.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fische.swift; sourceTree = "<group>"; };
 		BAACF54F2931355300BEE135 /* hintergrundMeinAquarium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hintergrundMeinAquarium.png; sourceTree = "<group>"; };
 		BACAF395292B6A9D00D82F1B /* GarnelenAnsicht.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarnelenAnsicht.swift; sourceTree = "<group>"; };
 		BAE2CE2E29279CFF0002E86F /* RegestrierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegestrierViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +85,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA0FCAD72948A4720062991B /* DatenModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA0FCADC2948AD8D0062991B /* NZGarnelen+CoreDataClass.swift */,
+				BA0FCADD2948AD8D0062991B /* NZGarnelen+CoreDataProperties.swift */,
+				BA0FCADE2948AD8D0062991B /* Registrieren+CoreDataClass.swift */,
+				BA0FCADF2948AD8D0062991B /* Registrieren+CoreDataProperties.swift */,
+				BA0FCAE02948AD8D0062991B /* Fische+CoreDataClass.swift */,
+				BA0FCAE12948AD8D0062991B /* Fische+CoreDataProperties.swift */,
+				BA0FCAE22948AD8D0062991B /* NZFische+CoreDataClass.swift */,
+				BA0FCAE32948AD8D0062991B /* NZFische+CoreDataProperties.swift */,
+				BA0FCAE42948AD8D0062991B /* Profil+CoreDataClass.swift */,
+				BA0FCAE52948AD8D0062991B /* Profil+CoreDataProperties.swift */,
+				BA0FCAE62948AD8D0062991B /* Garnelen+CoreDataClass.swift */,
+				BA0FCAE72948AD8D0062991B /* Garnelen+CoreDataProperties.swift */,
+				BA0FCAE82948AD8D0062991B /* Login+CoreDataClass.swift */,
+				BA0FCAE92948AD8D0062991B /* Login+CoreDataProperties.swift */,
+			);
+			path = DatenModel;
+			sourceTree = "<group>";
+		};
 		BA1399C429237F0D000DBA75 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +125,7 @@
 		BA1399CF29237F0D000DBA75 /* Garnelen&Co */ = {
 			isa = PBXGroup;
 			children = (
+				BA0FCAD72948A4720062991B /* DatenModel */,
 				BAA0F7912934C1E100FB2810 /* FischeTableView */,
 				BACAF39C292B741300D82F1B /* GarnelenTableView */,
 				BACAF399292B72C000D82F1B /* Login */,
@@ -92,6 +140,7 @@
 				BA049F85292FA8F5003FE827 /* Michael.JPG */,
 				BA1399DB29237F0F000DBA75 /* LaunchScreen.storyboard */,
 				BA1399DE29237F0F000DBA75 /* Info.plist */,
+				BA0FCAB8294866400062991B /* DataModel.xcdatamodeld */,
 			);
 			path = "Garnelen&Co";
 			sourceTree = "<group>";
@@ -101,7 +150,6 @@
 			children = (
 				BAA0F7922934C21B00FB2810 /* FischeViewController.swift */,
 				BAA0F7942934C33A00FB2810 /* FischAnsicht.swift */,
-				BAA0F7962934C35E00FB2810 /* Fische.swift */,
 			);
 			path = FischeTableView;
 			sourceTree = "<group>";
@@ -135,7 +183,6 @@
 			children = (
 				BA9297802927C056006D0C6C /* GarnelenViewController.swift */,
 				BACAF395292B6A9D00D82F1B /* GarnelenAnsicht.swift */,
-				BA049F89292FAF92003FE827 /* Garnelen.swift */,
 			);
 			path = GarnelenTableView;
 			sourceTree = "<group>";
@@ -217,13 +264,26 @@
 				BAE2CE2F29279CFF0002E86F /* RegestrierViewController.swift in Sources */,
 				BA1399D529237F0D000DBA75 /* LoginController.swift in Sources */,
 				BA35BF9F292F848500DA31EB /* ProfilViewController.swift in Sources */,
+				BA0FCAF12948AD8D0062991B /* NZFische+CoreDataProperties.swift in Sources */,
 				BA1399D129237F0D000DBA75 /* AppDelegate.swift in Sources */,
+				BA0FCAF52948AD8D0062991B /* Garnelen+CoreDataProperties.swift in Sources */,
+				BA0FCAEE2948AD8D0062991B /* Fische+CoreDataClass.swift in Sources */,
 				BACAF396292B6A9D00D82F1B /* GarnelenAnsicht.swift in Sources */,
-				BAA0F7972934C35E00FB2810 /* Fische.swift in Sources */,
-				BA049F8A292FAF92003FE827 /* Garnelen.swift in Sources */,
 				BA9297812927C056006D0C6C /* GarnelenViewController.swift in Sources */,
+				BA0FCAF22948AD8D0062991B /* Profil+CoreDataClass.swift in Sources */,
+				BA0FCAF32948AD8D0062991B /* Profil+CoreDataProperties.swift in Sources */,
+				BA0FCAEF2948AD8D0062991B /* Fische+CoreDataProperties.swift in Sources */,
+				BA0FCAEC2948AD8D0062991B /* Registrieren+CoreDataClass.swift in Sources */,
+				BA0FCAF62948AD8D0062991B /* Login+CoreDataClass.swift in Sources */,
 				BAA0F7932934C21B00FB2810 /* FischeViewController.swift in Sources */,
+				BA0FCAF42948AD8D0062991B /* Garnelen+CoreDataClass.swift in Sources */,
+				BA0FCABA294866400062991B /* DataModel.xcdatamodeld in Sources */,
+				BA0FCAEA2948AD8D0062991B /* NZGarnelen+CoreDataClass.swift in Sources */,
+				BA0FCAEB2948AD8D0062991B /* NZGarnelen+CoreDataProperties.swift in Sources */,
 				BAA0F7952934C33A00FB2810 /* FischAnsicht.swift in Sources */,
+				BA0FCAED2948AD8D0062991B /* Registrieren+CoreDataProperties.swift in Sources */,
+				BA0FCAF72948AD8D0062991B /* Login+CoreDataProperties.swift in Sources */,
+				BA0FCAF02948AD8D0062991B /* NZFische+CoreDataClass.swift in Sources */,
 				BA1399D329237F0D000DBA75 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +504,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA0FCAB8294866400062991B /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA0FCAB9294866400062991B /* DataModel.xcdatamodel */,
+			);
+			currentVersion = BA0FCAB9294866400062991B /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BA1399C529237F0D000DBA75 /* Project object */;
 }
