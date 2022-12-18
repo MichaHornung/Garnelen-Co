@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BA049F86292FA8F5003FE827 /* Michael.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BA049F85292FA8F5003FE827 /* Michael.JPG */; };
+		BA09482F294F4733008CD9CB /* Garnelen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA09482E294F4733008CD9CB /* Garnelen.swift */; };
+		BA094831294F4896008CD9CB /* Fische.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA094830294F4896008CD9CB /* Fische.swift */; };
 		BA0FCABA294866400062991B /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCAB8294866400062991B /* DataModel.xcdatamodeld */; };
 		BA0FCAEA2948AD8D0062991B /* NZGarnelen+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCADC2948AD8D0062991B /* NZGarnelen+CoreDataClass.swift */; };
 		BA0FCAEB2948AD8D0062991B /* NZGarnelen+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FCADD2948AD8D0062991B /* NZGarnelen+CoreDataProperties.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		BA049F85292FA8F5003FE827 /* Michael.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Michael.JPG; sourceTree = "<group>"; };
+		BA09482E294F4733008CD9CB /* Garnelen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Garnelen.swift; sourceTree = "<group>"; };
+		BA094830294F4896008CD9CB /* Fische.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fische.swift; sourceTree = "<group>"; };
 		BA0FCAB9294866400062991B /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		BA0FCADC2948AD8D0062991B /* NZGarnelen+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NZGarnelen+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BA0FCADD2948AD8D0062991B /* NZGarnelen+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NZGarnelen+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 		BAA0F7912934C1E100FB2810 /* FischeTableView */ = {
 			isa = PBXGroup;
 			children = (
+				BA094830294F4896008CD9CB /* Fische.swift */,
 				BAA0F7922934C21B00FB2810 /* FischeViewController.swift */,
 				BAA0F7942934C33A00FB2810 /* FischAnsicht.swift */,
 			);
@@ -181,6 +186,7 @@
 		BACAF39C292B741300D82F1B /* GarnelenTableView */ = {
 			isa = PBXGroup;
 			children = (
+				BA09482E294F4733008CD9CB /* Garnelen.swift */,
 				BA9297802927C056006D0C6C /* GarnelenViewController.swift */,
 				BACAF395292B6A9D00D82F1B /* GarnelenAnsicht.swift */,
 			);
@@ -267,6 +273,7 @@
 				BA0FCAF12948AD8D0062991B /* NZFische+CoreDataProperties.swift in Sources */,
 				BA1399D129237F0D000DBA75 /* AppDelegate.swift in Sources */,
 				BA0FCAF52948AD8D0062991B /* Garnelen+CoreDataProperties.swift in Sources */,
+				BA09482F294F4733008CD9CB /* Garnelen.swift in Sources */,
 				BA0FCAEE2948AD8D0062991B /* Fische+CoreDataClass.swift in Sources */,
 				BACAF396292B6A9D00D82F1B /* GarnelenAnsicht.swift in Sources */,
 				BA9297812927C056006D0C6C /* GarnelenViewController.swift in Sources */,
@@ -283,6 +290,7 @@
 				BAA0F7952934C33A00FB2810 /* FischAnsicht.swift in Sources */,
 				BA0FCAED2948AD8D0062991B /* Registrieren+CoreDataProperties.swift in Sources */,
 				BA0FCAF72948AD8D0062991B /* Login+CoreDataProperties.swift in Sources */,
+				BA094831294F4896008CD9CB /* Fische.swift in Sources */,
 				BA0FCAF02948AD8D0062991B /* NZFische+CoreDataClass.swift in Sources */,
 				BA1399D329237F0D000DBA75 /* SceneDelegate.swift in Sources */,
 			);

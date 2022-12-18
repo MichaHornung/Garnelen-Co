@@ -22,12 +22,13 @@ class FischAnsicht: UIViewController {
     @IBOutlet weak var fischePic: UIImageView!
         
         
-    var fische: Fische!
+    var fische: Fischs!
 
         
         override func viewDidLoad() {
             super.viewDidLoad()
             
+//            fischePic.image = UIImage(data: fische.fischePics!)
             fischePic.image = fische.fischePic
             name.text = fische.name
             herkunft.text = fische.herkunft

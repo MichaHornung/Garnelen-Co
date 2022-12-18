@@ -16,10 +16,10 @@ class FischeTableViewController: UITableViewController {
         "YellowCalico",
        ]
     var guppyFische = [
-        Fische(name:"KoiSunset", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/KoiSunset")!),
-        Fische(name:"MoskauBlau", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/MoskauBlau")!),
-        Fische(name:"SnowWhite", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/SnowWhite")!),
-        Fische(name:"YellowCalico", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/YellowCalico")!)
+        Fischs(name:"KoiSunset", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/KoiSunset")!),
+        Fischs(name:"MoskauBlau", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/MoskauBlau")!),
+        Fischs(name:"SnowWhite", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/SnowWhite")!),
+        Fischs(name:"YellowCalico", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/YellowCalico")!)
     ]
 
     let salmler = [
@@ -29,10 +29,10 @@ class FischeTableViewController: UITableViewController {
         "SchwarzerNeon",
     ]
     var salmlerFische = [
-        Fische(name:"BlauerNeon", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlauerNeon")!),
-        Fische(name:"RoterNeon", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/RoterNeon")!),
-        Fische(name:"Rotkopfsalmler", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Rotkopfsalmler")!),
-        Fische(name:"SchwarzerNeon", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/SchwarzerNeon")!)
+        Fischs(name:"BlauerNeon", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlauerNeon")!),
+        Fischs(name:"RoterNeon", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/RoterNeon")!),
+        Fischs(name:"Rotkopfsalmler", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Rotkopfsalmler")!),
+        Fischs(name:"SchwarzerNeon", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/SchwarzerNeon")!)
     ]
     
     let platy = [
@@ -42,10 +42,10 @@ class FischeTableViewController: UITableViewController {
         "Sunset"
     ]
     var platyFische = [
-        Fische(name:"BlueButterfly", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlueButterfly")!),
-        Fische(name:"BlueCalico", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlueCalico")!),
-        Fische(name:"BlueWaigtail", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlueWaigtail")!),
-        Fische(name:"Sunset", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Sunset")!)
+        Fischs(name:"BlueButterfly", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlueButterfly")!),
+        Fischs(name:"BlueCalico", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlueCalico")!),
+        Fischs(name:"BlueWaigtail", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/BlueWaigtail")!),
+        Fischs(name:"Sunset", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Sunset")!)
     ]
 
     let molly = [
@@ -54,9 +54,9 @@ class FischeTableViewController: UITableViewController {
         "Goldpuder"
     ]
     var mollyFische = [
-        Fische(name:"Black", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Black")!),
-        Fische(name:"Dalmatiner", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Dalmatiner")!),
-        Fische(name:"Goldpuder", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Goldpuder")!)
+        Fischs(name:"Black", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Black")!),
+        Fischs(name:"Dalmatiner", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Dalmatiner")!),
+        Fischs(name:"Goldpuder", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Goldpuder")!)
     ]
     
     let barsche = [
@@ -65,18 +65,18 @@ class FischeTableViewController: UITableViewController {
         "RamiElektricBlue"
     ]
     var barscheFische = [
-        Fische(name:"ApistogrammaCacatuoides", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/ApistogrammaCacatuoides")!),
-        Fische(name:"LabidochromisYellow", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/LabidochromisYellow")!),
-        Fische(name:"RamiElektricBlue", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/RamiElektricBlue")!)
+        Fischs(name:"ApistogrammaCacatuoides", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/ApistogrammaCacatuoides")!),
+        Fischs(name:"LabidochromisYellow", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/LabidochromisYellow")!),
+        Fischs(name:"RamiElektricBlue", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/RamiElektricBlue")!)
     ]
     let discus = [
         "Kobald",
         "Marlboro"]
     var discusFische = [
-        Fische(name:"Kobald", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Kobald")!),
-        Fische(name:"Marlboro", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Marlboro")!)
+        Fischs(name:"Kobald", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Kobald")!),
+        Fischs(name:"Marlboro", herkunft: "Ostchina", groesse: "Weibchen 5,0 cm; Männchen 2,5 cm", temperatur: "22 - 24 °C", becken: "ab 60 l", phWert: "5,5 - 8,5", ghWert: "5 - 25°", fischePic: UIImage(named:"Fische/Marlboro")!)
     ]
-    var selectedFische: Fische!
+    var selectedFische: Fischs!
     
     
     override func viewDidLoad() {
